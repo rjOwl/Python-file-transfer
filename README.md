@@ -19,16 +19,19 @@ them inside serverFtp
 **1- Setting up nowdns account**
 * Go to now-dns.com and create an account
 * Create a new Hostname
-* Put the hostname inside clientFtp.py in the IP variable
+* Open clientFtp.py and set serverIP="the hostname you created"
 
-**2- Open forwording port in your router**
+**2- Setting up your router**
 * Open browser and type 192.168.1.1 and login
-* Go To forwarding
-* Choose a port
-* Choose the app name, should be the same as the server, in our case, serverFtp.py
-* In client set variable prot=the port you typed in the router settings
+* Go To port forwarding
+* Choose a port number
+* In both clientFtp.py and serverFtp.py set variable serverPort=the port number you typed in the previous step
+* Choose an app name, should be the same as the server file name, in our case it's serverFtp.py
+* Save and exit
 
 **3- Keep the host up-to-date using curl**
+* curl -u < email >:< password > "https://now-dns.com/update?hostname=< hostname >"
+* For more info go to https://now-dns.com/?m=api
 
-curl -u [email]:[password] "https://now-dns.com/update?hostname=[hostname]"
 
+If I missed anything I'll add it.
