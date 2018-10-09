@@ -15,7 +15,7 @@ them inside serverFtp
 * Add gui to the client to make it user friendly
 * Support resuming
 
-# How to use it globally
+# How to use it globally (Over the internet)
 **1- Setting up nowdns account**
 * Go to now-dns.com and create an account
 * Create a new Hostname
